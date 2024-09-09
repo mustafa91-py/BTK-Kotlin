@@ -78,9 +78,22 @@ class Variable {
         println(x()>y() || x()>z()) // kısa devre var ilk kosul yanlis ise digerlerine bakilmiyor && ve de
 
     }
+    fun data_structures_arrays(){
+        val liste = arrayOf("mustafa","uyar","ahmet","mehmet","veli") // index 0 dan baslar julia 1 da baslar
+        println(liste[0])
+        println(liste[1])
+        println(liste.get(4))
 
+        val liste2 = arrayOf(1,2,3,4,5.5,"mustafa",true) //farkli veri tiplerinde olabilir
+
+        println(liste2.sliceArray(2..5)) // pythonda ki liste2[2:5] gibi
+        println(liste2.sliceArray(2..5).contentToString())
+
+    // arrayler degistirelibilir ama yeni eleman eklenemiyor
+    }
 }
 fun main(){
     val variable = Variable()
-    variable.boolean()
+//    variable.boolean()
+    variable.data_structures_arrays()
 }
