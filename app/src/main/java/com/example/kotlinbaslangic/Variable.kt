@@ -91,9 +91,23 @@ class Variable {
 
     // arrayler degistirelibilir ama yeni eleman eklenemiyor
     }
+
+    fun data_structures_lists(){
+        val liste = ArrayList<Int>()
+        liste.add(28)
+        liste.add(30)
+        println(liste[0])
+        val liste2 = arrayListOf<Any>()
+        liste2.add("mustafa")
+        liste2.add(true)
+        liste2.add(-5.2f)
+        liste2.add(8u)
+        println(liste2)
+    }
 }
 fun main(){
     val variable = Variable()
 //    variable.boolean()
-    variable.data_structures_arrays()
+//    variable.data_structures_arrays()
+    variable.data_structures_lists()
 }
